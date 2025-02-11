@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+  <title>Shortly</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+
+      <!-- Nav Container -->
+      <nav class="relative container mx-auto p-6">
+        <!-- Flex items -->
+        <div class="flex items-center justify-between">
+          <!-- Flex Container -->
+          <div class="flex items-center space-x-20">
+            <img src="images/logo.png" class="rounded-lg" style="width:250px; height:100px" alt="Shortly" />
+
+            <!-- Left menu-->
+            <div class="hidden space-x-8 font-bold lg:flex">
+              <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
+              <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+              <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+            </div>
+
+            <!-- TODO Hamburger menu -->
+             <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+             </button>
+          </div>
+
+          <!-- TODO Mobile menu -->
+           <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+            <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+              <a href="#stats" class="w-full text-center">Services</a>
+              <a href="#projects" class="w-full text-center">Projects</a>
+              <a href="#footer" class="w-full text-center">Contact</a>
+            </div>
+           </div>
+        </div>
+      </nav>
+
+
+      <!-- Hero section -->
+      <section id="hero">
+        <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+          <!-- Content container-->
+          <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:mb-52 lg:w-1/2 xl:mb-52">
+            <h1 class="text-5xl font-bold text-center lg:text-6xl">
+              More than just design team
+            </h1>
+
+            <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
+              Build your brand’s recognition and get detailed insights on how your links are performing.
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+            <img src="images/3d-floor.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Stats section -->
+  <section id="stats" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-3">
+      <h2 class="text-4xl mb-6 font-bold text-center">
+        Our Services
+      </h2>
+      <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+        Track how our team can contribute to your life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature Box section -->
+   <section id="features" class="pb-32 bg-gray-100">
+    <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
+      <!--Horizontal line-->
+      <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block">
+      </div>
+
+      <!-- Vertical line -->
+      <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden">
+      </div>
+
+      <!-- Feature Box 1 -->
+       <div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container for background and center -->
+           <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+           </div>
+        </div>
+
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Learn More
+        </a>
+       </div>
+
+       <!-- Feature Box 2 -->
+       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container for background and center -->
+           <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+           </div>
+        </div>
+
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <a href="brand-recognition.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Learn More
+        </a>
+       </div>
+
+       <!-- Feature Box 2 -->
+       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container for background and center -->
+           <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+           </div>
+        </div>
+
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <a href="brand-recognition.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Learn More
+        </a>
+       </div>
+
+       <!-- Feature Box 2 -->
+       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container for background and center -->
+           <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+           </div>
+        </div>
+
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <a href="brand-recognition.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Learn More
+        </a>
+       </div>
+
+       <!-- Feature Box 2 -->
+       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container for background and center -->
+           <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+           </div>
+        </div>
+
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <a href="brand-recognition.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Learn More
+        </a>
+       </div>
+
+
+    </div>
+   </section>
+
+   <!-- New Projects Section -->
+   <section id="projects" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl mb-6 font-bold text-center">Our Projects</h2>
+      <div class="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0 gap-6">
+        <!-- Project Card 1 -->
+        <div class="flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md">
+          <img src="images/Living-room-6-1.jpg" alt="Project 1" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 1</h3>
+          <p class="text-gray-400 text-center">A brief description of the first project.</p>
+          <a href="./projects/project1.html" class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md">
+          <img src="images/Living-room-6-1.jpg" alt="Project 2" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 2</h3>
+          <p class="text-gray-400 text-center">A brief description of the second project.</p>
+          <a href="./projects/project2.html" class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer id="footer" class="py-16 bg-veryDarkViolet">
+      <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items:start">
+        <img src="images/logo.svg" alt="">
+
+        <!-- Menus container -->
+         <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+          <div class="flex flex-col items-center w-full md:items-start">
+            <h5 class="text-white mb-5 font-bold capitalize">Επικοινωνία</h5>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="" class="capitalize text-gray-400 hover:text-cyan">Περιοχή: Αττική</a>
+              <a href="" class="capitalize text-gray-400 hover:text-cyan">Τηλ: 697 000 0090</a>
+              <a href="" class=" text-gray-400 hover:text-cyan">Email: prospect@info.com</a>
+            </div>
+          </div>
+         </div>
+
+
+          <!-- Social container -->
+          <div class="flex space-x-8">
+            <a href="">
+              <img src="images/icon-facebook.svg" alt=""d class="ficon">
+            </a>
+            <a href="">
+              <img src="images/icon-instagram.svg" alt="" class="ficon">
+            </a>
+            <a href="">
+              <img src="images/icon-twitter.svg" alt="" class="ficon"> 
+            </a>
+          </div>
+         </div>
+      </div>
+    </footer>
+</body>
+</html>
