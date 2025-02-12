@@ -15,6 +15,16 @@
   <title>Prospect</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF2N89Z5N1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VF2N89Z5N1');
+</script>
+
 <body>
 
   <header>
@@ -240,7 +250,7 @@
 
   <!-- New Projects Section -->
   <section id="projects" class="py-24 bg-gray-100">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-6 mt--24">
       <h2 class="text-4xl mb-6 font-bold text-center">Our Projects</h2>
   
       <div class="flex flex-col md:flex-row justify-between gap-8">
@@ -336,6 +346,21 @@
         </a>
       </div>
     </div>
+
+    <div class="flex flex-col items-center justify-center mt-2 custom-mobile">
+      <p>Developed by <strong><a href="https://www.instagram.com/yourusername" target="_blank" class=" hover:text-cyan md:text-cyan">Panagiotis Zois</a></strong> | &copy; 2025 All rights reserved</p>
+    </div> 
+    
+    <style>
+      @media (max-width: 768px) {
+        .custom-mobile {
+          margin: 40px;
+          text-align: center;
+          margin-bottom: -20px;
+        }
+      }
+    </style>
+    
     </div>
   </footer>
 </body>
