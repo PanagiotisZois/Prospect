@@ -28,30 +28,30 @@
           <div class="flex items-center space-x-20 -mr-20">
             <img src="images/logo.png" class="rounded-lg" style="width:200px; height:100px" alt="Shortly" />
           </div>
-      
-                <!-- Right menu-->
-                <div class="hidden items-center space-x-8 font-bold lg:flex">
-                  <a href="#services" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
-                  <a href="#projects" class="text-grayishViolet hover:text-veryDarkViolet">Projects</a>
-                  <a href="#footer" class="text-grayishViolet hover:text-veryDarkViolet">Contact</a>
-                </div>
 
-            <!-- TODO Hamburger menu -->
-             <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-             </button>
+          <!-- Right menu-->
+          <div class="hidden items-center space-x-8 font-bold lg:flex">
+            <a href="#services" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
+            <a href="#projects" class="text-grayishViolet hover:text-veryDarkViolet">Projects</a>
+            <a href="#footer" class="text-grayishViolet hover:text-veryDarkViolet">Contact</a>
           </div>
 
-          <!-- TODO Mobile menu -->
-           <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
-            <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-              <a href="#stats" class="w-full text-center">Services</a>
-              <a href="#projects" class="w-full text-center">Projects</a>
-              <a href="#footer" class="w-full text-center">Contact</a>
-            </div>
-           </div>
+          <!-- TODO Hamburger menu -->
+          <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- TODO Mobile menu -->
+        <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+            <a href="#stats" class="w-full text-center">Services</a>
+            <a href="#projects" class="w-full text-center">Projects</a>
+            <a href="#footer" class="w-full text-center">Contact</a>
+          </div>
+        </div>
         </div>
       </nav>
 
@@ -92,26 +92,27 @@
     </div>
   </section>
 
-<!-- Services Box section -->
-<section id="services" class="pb-32 bg-gray-100">
-  <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 md:flex-wrap md:items-stretch feature-container">
-    <!-- Horizontal line -->
-    <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
+  <!-- Services Box section -->
+  <section id="services" class="pb-32 bg-gray-100">
+    <div
+      class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 md:flex-wrap md:items-stretch feature-container">
+      <!-- Horizontal line -->
+      <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
 
-    <!-- Vertical line -->
-    <div class="absolute w-2 left-1/2 -ml-1 bg-cyan md:hidden" style="top: 100px; height: 90%;"></div>
+      <!-- Vertical line -->
+      <div class="absolute w-2 left-1/2 -ml-1 bg-cyan md:hidden" style="top: 100px; height: 90%;"></div>
 
-    <!-- Feature Boxes -->
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
+      <!-- Feature Boxes -->
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
-      </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Άδειες Δόμησης
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Άδειες Δόμησης
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
         <ul class="text-center text-gray-400 md:text-left">
           <li>Έκδοση οικοδομικών αδειών.</li>
           <br>
@@ -119,177 +120,224 @@
           <br>
           <li><b>Υπηρεσίες:</b> Άδεια κατεδάφισης, ανέγερσης, προσθήκης, επισκευής, και τροποποίηση όψεων.</li>
         </ul>
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
-
-    <!-- Αντιγράφουμε το ίδιο πρότυπο για τα υπόλοιπα Feature Boxes -->
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
-        </div>
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Brand Recognition
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
 
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
+      <!-- Αντιγράφουμε το ίδιο πρότυπο για τα υπόλοιπα Feature Boxes -->
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+          confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Brand Recognition
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
 
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+          confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Brand Recognition
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
 
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+          confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Brand Recognition
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
 
-    <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-      <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-        <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-          <img src="images/icon-brand-recognition.svg" alt="">
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+          confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
-      <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-        Brand Recognition
-      </h5>
-      <p class="text-center text-gray-400 md:text-left flex-grow">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-        Μάθετε Περισσότερα...
-      </a>
-    </div>
-  </div>
-</section>
 
-<style>
-  @media (min-width: 768px) {
-    .feature-container {
-      display: flex;
-      align-items: stretch;
-    }
-
-    .feature-box {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-    }
-
-    .feature-box p {
-      flex-grow: 1;
-    }
-  }
-</style>
-
-   <!-- New Projects Section -->
-   <section id="projects" class="py-24 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl mb-6 font-bold text-center">Our Projects</h2>
-      <div class="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0 gap-6">
-        <!-- Project Card 1 -->
-        <div class="flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md">
-          <img src="images/Living-room-6-1.jpg" alt="Project 1" class="w-48 object-cover rounded-lg">
-          <h3 class="text-2xl font-bold">Project Title 1</h3>
-          <p class="text-gray-400 text-center">A brief description of the first project.</p>
-          <a href="./projects/project1.html" class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
-          </a>
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
         </div>
-        <!-- Project Card 2 -->
-        <div class="flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md">
-          <img src="images/Living-room-6-1.jpg" alt="Project 2" class="w-48 object-cover rounded-lg">
-          <h3 class="text-2xl font-bold">Project Title 2</h3>
-          <p class="text-gray-400 text-center">A brief description of the second project.</p>
-          <a href="./projects/project2.html" class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
-          </a>
-        </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+          confidence in your content.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
       </div>
     </div>
   </section>
 
-    <footer id="footer" class="py-16 bg-veryDarkViolet">
-      <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items:start">
-        <img src="images/logo.svg" alt="">
+  <style>
+    @media (min-width: 768px) {
+      .feature-container {
+        display: flex;
+        align-items: stretch;
+      }
 
-        <!-- Menus container -->
-         <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
-          <div class="flex flex-col items-center w-full md:items-start">
-            <h5 class="text-white text-2xl mb-5 font-bold capitalize">Επικοινωνία</h5>
-            <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Περιοχή</b>: Αττική</a>
-              <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Τηλ</b>: 697 000 0090</a>
-              <a class="text-lg  text-gray-400 hover:text-cyan"><b>Email</b>: prospect@info.com</a>
-            </div>
-          </div>
-         </div>
+      .feature-box {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
 
+      .feature-box p {
+        flex-grow: 1;
+      }
+    }
+  </style>
 
-          <!-- Social container -->
-          <div class="flex space-x-8">
-            <a href="">
-              <img src="images/icon-facebook.svg" alt=""d class="ficon">
-            </a>
-            <a href="">
-              <img src="images/icon-instagram.svg" alt="" class="ficon">
-            </a>
-            <a href="">
-              <img src="images/icon-twitter.svg" alt="" class="ficon"> 
-            </a>
-          </div>
-         </div>
+  <!-- New Projects Section -->
+  <section id="projects" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl mb-6 font-bold text-center">Our Projects</h2>
+  
+      <div class="flex flex-col md:flex-row justify-between gap-8">
+
+        <!-- Project Card 1 -->
+        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+          <img src="images/Living-room-6-1.jpg" alt="Project 1" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 1</h3>
+          <p class="text-gray-400 text-center">A brief description of the first project.</p>
+          <a href="./projects/project1.html"
+            class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
+  
+        <!-- Project Card 2 -->
+        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+          <img src="images/Living-room-6-1.jpg" alt="Project 2" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 2</h3>
+          <p class="text-gray-400 text-center">A brief description of the second project.</p>
+          <a href="./projects/project2.html"
+            class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
+  
+        <!-- Project Card 3 -->
+        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+          <img src="images/Living-room-6-1.jpg" alt="Project 3" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 3</h3>
+          <p class="text-gray-400 text-center">A brief description of the third project.</p>
+          <a href="./projects/project3.html"
+            class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
+  
+        <!-- Project Card 4 -->
+        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+          <img src="images/Living-room-6-1.jpg" alt="Project 4" class="w-48 object-cover rounded-lg">
+          <h3 class="text-2xl font-bold">Project Title 4</h3>
+          <p class="text-gray-400 text-center">A brief description of the fourth project.</p>
+          <a href="./projects/project4.html"
+            class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+            See our progress...
+          </a>
+        </div>
       </div>
-    </footer>
+    </div>
+
+    <style>
+      .custom-margin {
+        margin: 16px;
+      }
+    
+      @media (max-width: 768px) {
+        .custom-margin {
+          margin: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </section>
+
+  <footer id="footer" class="py-16 bg-veryDarkViolet">
+    <div
+      class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items:start">
+      <img src="images/logo.svg" alt="">
+
+      <!-- Menus container -->
+      <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+        <div class="flex flex-col items-center w-full md:items-start">
+          <h5 class="text-white text-2xl mb-5 font-bold capitalize">Επικοινωνία</h5>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Περιοχή</b>: Αττική</a>
+            <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Τηλ</b>: 697 000 0090</a>
+            <a class="text-lg  text-gray-400 hover:text-cyan"><b>Email</b>: prospect@info.com</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Social container -->
+      <div class="flex space-x-8">
+        <a href="">
+          <img src="images/icon-facebook.svg" alt="" d class="ficon">
+        </a>
+        <a href="">
+          <img src="images/icon-instagram.svg" alt="" class="ficon">
+        </a>
+        <a href="">
+          <img src="images/icon-twitter.svg" alt="" class="ficon">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
+
 </html>
