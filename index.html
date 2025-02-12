@@ -23,31 +23,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-VF2N89Z5N1');
-</script><script>
-  const navMenu = document.getElementById('navMenu');
-  const toggleButton = document.getElementById('toggleButton');
-
-  let isNavOpen = false;
-
-  // Άνοιγμα και κλείσιμο του μενού όταν πατάς το κουμπί
-  toggleButton.addEventListener('click', () => {
-    isNavOpen = !isNavOpen;
-    if (isNavOpen) {
-      navMenu.classList.remove('hidden');
-    } else {
-      navMenu.classList.add('hidden');
-    }
-  });
-
-  // Κλείσιμο του μενού όταν γίνεται scroll
-  window.addEventListener('scroll', () => {
-    if (isNavOpen) {
-      navMenu.classList.add('hidden');
-      isNavOpen = false;
-    }
-  });
 </script>
-
 
 <body>
 
@@ -68,6 +44,16 @@
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
         </button>
+
+              <!-- TODO Mobile menu -->
+              <div id="menu" class="absolute hidden p-4 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+                <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+                  <a href="#stats" class="w-full text-center p-6">Services</a>
+                  <a href="#projects" class="w-full text-center p-6">Projects</a>
+                  <a href="#footer" class="w-full text-center p-6">Contact</a>
+                </div>
+              </div>
+              
       </div>
     </nav>
   </header>
