@@ -23,48 +23,54 @@
   gtag('js', new Date());
 
   gtag('config', 'G-VF2N89Z5N1');
+</script><script>
+  const navMenu = document.getElementById('navMenu');
+  const toggleButton = document.getElementById('toggleButton');
+
+  let isNavOpen = false;
+
+  // Άνοιγμα και κλείσιμο του μενού όταν πατάς το κουμπί
+  toggleButton.addEventListener('click', () => {
+    isNavOpen = !isNavOpen;
+    if (isNavOpen) {
+      navMenu.classList.remove('hidden');
+    } else {
+      navMenu.classList.add('hidden');
+    }
+  });
+
+  // Κλείσιμο του μενού όταν γίνεται scroll
+  window.addEventListener('scroll', () => {
+    if (isNavOpen) {
+      navMenu.classList.add('hidden');
+      isNavOpen = false;
+    }
+  });
 </script>
+
 
 <body>
 
   <header>
-    <nav>
-
-      <!-- Nav Container -->
-      <nav class="relative container mx-auto p-6">
-        <!-- Flex items -->
-        <div class="flex items-center justify-between">
-          <!-- Flex Container -->
-          <div class="flex items-center space-x-20 -mr-20">
-            <img src="images/logo.png" class="rounded-lg" style="width:200px; height:100px" alt="Shortly" />
-          </div>
-
-          <!-- Right menu-->
-          <div class="hidden items-center space-x-8 font-bold lg:flex">
-            <a href="#services" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
-            <a href="#projects" class="text-grayishViolet hover:text-veryDarkViolet">Projects</a>
-            <a href="#footer" class="text-grayishViolet hover:text-veryDarkViolet">Contact</a>
-          </div>
-
-          <!-- TODO Hamburger menu -->
-          <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
+    <!-- Nav Container -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg p-6" id="navMenu">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-20">
+          <img src="images/logo.png" class="rounded-lg" style="width:200px; height:100px" alt="Shortly" />
         </div>
-
-        <!-- TODO Mobile menu -->
-        <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
-          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-            <a href="#stats" class="w-full text-center">Services</a>
-            <a href="#projects" class="w-full text-center">Projects</a>
-            <a href="#footer" class="w-full text-center">Contact</a>
-          </div>
+        <div class="hidden items-center space-x-8 font-bold lg:flex">
+          <a href="#services" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
+          <a href="#projects" class="text-grayishViolet hover:text-veryDarkViolet">Projects</a>
+          <a href="#footer" class="text-grayishViolet hover:text-veryDarkViolet">Contact</a>
         </div>
-        </div>
-      </nav>
-
+        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
       <!-- Hero section -->
       <section id="hero">
@@ -85,10 +91,6 @@
           </div>
         </div>
       </section>
-
-      </div>
-    </nav>
-  </header>
 
   <!-- Stats section -->
   <section id="stats" class="py-24 bg-gray-100">
