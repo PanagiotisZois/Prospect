@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="./input.css" />
   <script src="js/script.js" defer></script>
   <title>Prospect</title>
-  
+
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF2N89Z5N1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-VF2N89Z5N1');
@@ -47,47 +47,47 @@
           <span class="hamburger-bottom"></span>
         </button>
 
-              <!-- TODO Mobile menu -->
-              <div id="menu" class="absolute hidden p-4 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
-                <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-                  <a href="#stats" class="w-full text-center p-6">Services</a>
-                  <a href="#projects" class="w-full text-center p-6">Projects</a>
-                  <a href="#footer" class="w-full text-center p-6">Contact</a>
-                </div>
-              </div>
-              
+        <!-- TODO Mobile menu -->
+        <div id="menu" class="absolute hidden p-4 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+            <a href="#stats" class="w-full text-center p-6">Services</a>
+            <a href="#projects" class="w-full text-center p-6">Projects</a>
+            <a href="#footer" class="w-full text-center p-6">Contact</a>
+          </div>
+        </div>
+
       </div>
     </nav>
   </header>
 
-      <!-- Hero section -->
-      <section id="hero">
-        <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
-          <!-- Content container-->
-          <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:mb-52 lg:w-1/2 xl:mb-52">
-            <h1 class="text-5xl font-bold text-center lg:text-6xl">
-              More than just design team
-            </h1>
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+      <!-- Content container-->
+      <div class="flex flex-col items-center space-y-10 mb-44 lg:mt-16 lg:mb-52 lg:w-1/2 xl:mb-52">
+        <h1 class="text-5xl font-bold text-center lg:text-6xl">
+          Μια ομάδα που ξεπερνά τα όρια του σχεδιασμού
+        </h1>
 
-            <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-              Build your brand’s recognition and get detailed insights on how your links are performing.
-            </p>
-          </div>
-          <!-- Image -->
-          <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-            <img src="images/3d-floor.jpg" alt="">
-          </div>
-        </div>
-      </section>
+        <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-center">
+          Η ομάδα μας ξεπερνά το σχεδιασμό, δημιουργώντας ολοκληρωμένες λύσεις και αποτελέσματα.
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+        <img src="images/3d-floor.jpg" alt="">
+      </div>
+    </div>
+  </section>
 
   <!-- Stats section -->
   <section id="stats" class="py-24 bg-gray-100">
     <div class="container mx-auto px-3">
       <h2 class="text-4xl mb-6 font-bold text-center">
-        Our Services
+        Υπηρεσίες 
       </h2>
       <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
-        Track how our team can contribute to your life.
+        Ανακάλυψε πώς μπορούμε να πραγματοποιήσουμε την ανάγκη σου.
       </p>
     </div>
   </section>
@@ -100,7 +100,7 @@
       <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
 
       <!-- Vertical line -->
-      <div class="absolute w-2 left-1/2 -ml-1 bg-cyan md:hidden" style="top: 100px; height: 90%;"></div>
+      <div class="absolute w-2 left-1/2 -ml-1 bg-cyan md:hidden" style="top: 100px; height: 180%;"></div>
 
       <!-- Feature Boxes -->
       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
@@ -113,37 +113,60 @@
           Άδειες Δόμησης
         </h5>
         <p class="text-center text-gray-400 md:text-left flex-grow">
-        <ul class="text-center text-gray-400 md:text-left">
-          <li>Έκδοση οικοδομικών αδειών.</li>
+          Έκδοση οικοδομικών αδειών με συμμόρφωση στις απαιτήσεις.
+          <br><br>
+          <b>Υπηρεσίες</b>: άδεια κατεδάφισης, ανέγερσης, προσθήκης, επισκευής και τροποποίησης όψεων.
+        </p>
+        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
+      </div>
+
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
+        </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Τακτοποιήσεις Αυθαιρέτων
+        </h5>
+        <p class="text-center text-gray-400 md:text-left flex-grow">
+          Ακριβή τοπογραφικά διαγράμματα με επαγγελματισμό, κάλυψη κάθε ανάγκης του έργου σας και αξιόπιστη υποστήριξη
+          σε όλα τα στάδια.
+        </p>
+        <a href="services/service5.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+          Μάθετε Περισσότερα...
+        </a>
+      </div>
+
+      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+            <img src="images/icon-brand-recognition.svg" alt="">
+          </div>
+        </div>
+        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
+          Τοπογραφικά Διαγράμματα
+        </h5>
+        <ul class="flex flex-col text-gray-400 md:text-left">
+          <li>Ακριβής εκπόνηση τοπογραφικών διαγραμμάτων με επαγγελματισμό.</li>
           <br>
-          <li>Συμμόρφωση με πολεοδομικές και νομοθετικές απαιτήσεις.</li>
+          <li>Κάλυψη κάθε ανάγκης του έργου σας με συνέπεια.</li>
           <br>
-          <li><b>Υπηρεσίες:</b> Άδεια κατεδάφισης, ανέγερσης, προσθήκης, επισκευής, και τροποποίηση όψεων.</li>
+          <li>Παροχή αξιόπιστης υποστήριξης σε όλα τα στάδια.</li>
         </ul>
-        </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+        <a href="services/service3.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
           Μάθετε Περισσότερα...
         </a>
       </div>
+    </div>
 
-      <!-- Αντιγράφουμε το ίδιο πρότυπο για τα υπόλοιπα Feature Boxes -->
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Brand Recognition
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-          confidence in your content.
-        </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
+    <div
+      class="relative container secondBox flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 md:flex-wrap md:items-stretch feature-container">
+
+      <!-- Horizontal line -->
+      <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
 
       <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
@@ -152,13 +175,13 @@
           </div>
         </div>
         <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Brand Recognition
+          Ανακαινίσεις Διαμερισμάτων - Καταστημάτων
         </h5>
         <p class="text-center text-gray-400 md:text-left flex-grow">
-          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-          confidence in your content.
+          Η ομάδα μας ειδικεύεται σε ανακαινίσεις και διακόσμηση, προσφέροντας λειτουργικές και αισθητικές λύσεις που
+          αναβαθμίζουν την αξία του ακινήτου, με χρήση σύγχρονης τεχνολογίας και 3D σχεδίων για απόλυτη διαφάνεια.
         </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+        <a href="services/service4.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
           Μάθετε Περισσότερα...
         </a>
       </div>
@@ -170,13 +193,14 @@
           </div>
         </div>
         <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Brand Recognition
+          Άδειες Λειτουργίας Καταστημάτων
         </h5>
         <p class="text-center text-gray-400 md:text-left flex-grow">
-          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-          confidence in your content.
+          Αναλαμβάνουμε την έκδοση αδειών λειτουργίας για κάθε επαγγελματικό χώρο, εξασφαλίζοντας τη συμμόρφωση με τη
+          νομοθεσία και την ασφαλή λειτουργία της επιχείρησής σας. Προσφέρουμε υποστήριξη από τη συγκέντρωση
+          δικαιολογητικών μέχρι την τελική έγκριση.
         </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+        <a href="services/service5.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
           Μάθετε Περισσότερα...
         </a>
       </div>
@@ -188,31 +212,13 @@
           </div>
         </div>
         <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Brand Recognition
+          Μελέτες
         </h5>
         <p class="text-center text-gray-400 md:text-left flex-grow">
-          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-          confidence in your content.
+          Προσφέρουμε πλήρεις μελέτες για αρχιτεκτονικές, στατικές και μηχανολογικές ανάγκες, εξασφαλίζοντας ασφάλεια,
+          λειτουργικότητα και ποιότητα με τη χρήση σύγχρονης τεχνολογίας.
         </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Brand Recognition
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-          confidence in your content.
-        </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
+        <a href="services/service6.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
           Μάθετε Περισσότερα...
         </a>
       </div>
@@ -220,7 +226,16 @@
   </section>
 
   <style>
+
+    .secondBox{
+      margin-top: 5%;
+    }
+
     @media (min-width: 768px) {
+      .secondBox{
+        margin-top: 1%;
+      }
+
       .feature-container {
         display: flex;
         align-items: stretch;
@@ -241,51 +256,55 @@
   <!-- New Projects Section -->
   <section id="projects" class="py-24 bg-gray-100">
     <div class="container mx-auto px-6 mt--24">
-      <h2 class="text-4xl mb-6 font-bold text-center">Our Projects</h2>
-  
+      <h2 class="text-4xl mb-6 font-bold text-center">Έργα</h2>
+
       <div class="flex flex-col md:flex-row justify-between gap-8">
 
         <!-- Project Card 1 -->
-        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+        <div
+          class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
           <img src="images/Living-room-6-1.jpg" alt="Project 1" class="w-48 object-cover rounded-lg">
           <h3 class="text-2xl font-bold">Project Title 1</h3>
           <p class="text-gray-400 text-center">A brief description of the first project.</p>
           <a href="./projects/project1.html"
             class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
+            Δες την πρόοδο μας...
           </a>
         </div>
-  
+
         <!-- Project Card 2 -->
-        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+        <div
+          class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
           <img src="images/Living-room-6-1.jpg" alt="Project 2" class="w-48 object-cover rounded-lg">
           <h3 class="text-2xl font-bold">Project Title 2</h3>
           <p class="text-gray-400 text-center">A brief description of the second project.</p>
           <a href="./projects/project2.html"
             class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
+            Δες την πρόοδο μας...
           </a>
         </div>
-  
+
         <!-- Project Card 3 -->
-        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+        <div
+          class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
           <img src="images/Living-room-6-1.jpg" alt="Project 3" class="w-48 object-cover rounded-lg">
           <h3 class="text-2xl font-bold">Project Title 3</h3>
           <p class="text-gray-400 text-center">A brief description of the third project.</p>
           <a href="./projects/project3.html"
             class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
+            Δες την πρόοδο μας...
           </a>
         </div>
-  
+
         <!-- Project Card 4 -->
-        <div class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
+        <div
+          class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
           <img src="images/Living-room-6-1.jpg" alt="Project 4" class="w-48 object-cover rounded-lg">
           <h3 class="text-2xl font-bold">Project Title 4</h3>
           <p class="text-gray-400 text-center">A brief description of the fourth project.</p>
           <a href="./projects/project4.html"
             class="px-6 py-4 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-            See our progress...
+            Δες την πρόοδο μας...
           </a>
         </div>
       </div>
@@ -295,7 +314,7 @@
       .custom-margin {
         margin: 16px;
       }
-    
+
       @media (max-width: 768px) {
         .custom-margin {
           margin: 0px;
@@ -338,9 +357,10 @@
     </div>
 
     <div class="flex flex-col items-center justify-center mt-2 custom-mobile">
-      <p>Developed by <strong><a href="https://panagiotiszois.github.io/Panagiotis-Zois/" target="_blank" class=" hover:text-cyan md:text-cyan">Panagiotis Zois</a></strong> | &copy; 2025 All rights reserved</p>
-    </div> 
-    
+      <p>Developed by <strong><a href="https://panagiotiszois.github.io/Panagiotis-Zois/" target="_blank"
+            class=" hover:text-cyan md:text-cyan">Panagiotis Zois</a></strong> | &copy; 2025 All rights reserved</p>
+    </div>
+
     <style>
       @media (max-width: 768px) {
         .custom-mobile {
@@ -350,7 +370,7 @@
         }
       }
     </style>
-    
+
     </div>
   </footer>
 </body>
