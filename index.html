@@ -36,6 +36,18 @@
       margin-bottom: 20px;
     }
 
+    .loading-dots::after {
+      content: ' .';
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+      0%, 20% { content: ' .'; }
+      40% { content: ' ..'; }
+      60% { content: ' ...'; }
+      100% { content: ' .'; }
+    }
+
     .construction-image {
       max-width: 300px;
       margin: 30px 0;
@@ -59,19 +71,35 @@
     .lang-btn {
       left: 20px;
     }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .construction-image {
+        max-width: 200px;
+      }
+
+      .toggle-btn {
+        padding: 4px 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
   <button class="lang-btn" onclick="toggleLanguage()">🌐 EN/GR</button>
 
-  <div class="logo">PROSPECT</div>
+  <div class="logo" id="logo">PROSPECT</div>
   <img src="./image.png" alt="Under Construction" class="construction-image" />
-  <div class="loading-dots">Η σελίδα είναι υπό κατασκευή</div>
-  <div>Σύντομα κοντά σας!</div>
+  <div class="loading-dots" id="message">Η σελίδα είναι υπό κατασκευή</div>
+  <div id="soon">Σύντομα κοντά σας.</div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+     document.addEventListener("DOMContentLoaded", function() {
       toggleDarkMode();
     });
 
