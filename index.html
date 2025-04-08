@@ -1,392 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="images/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="./input.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="js/script.js" defer></script>
-  <title>Prospect</title>
-
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF2N89Z5N1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-VF2N89Z5N1');
-</script>
-
-<body class="scroll-smooth">
-
-  <header>
-    <!-- Nav Container -->
-    <nav class="sticky top-0 z-50 bg-white shadow-lg p-6" id="navMenu">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-20">
-          <img src="images/logo.png" class="rounded-lg" style="width:200px; height:100px" alt="Shortly" />
-        </div>
-        <div class="hidden items-center space-x-8 font-bold lg:flex">
-          <a href="#services" class="text-grayishViolet hover:text-veryDarkViolet">Services</a>
-          <a href="#projects" class="text-grayishViolet hover:text-veryDarkViolet">Projects</a>
-          <a href="#footer" class="text-grayishViolet hover:text-veryDarkViolet">Contact</a>
-        </div>
-        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-
-        <!-- TODO Mobile menu -->
-        <div id="menu" class="absolute hidden p-4 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
-          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-            <a href="#stats" class="w-full text-center p-6">Services</a>
-            <a href="#projects" class="w-full text-center p-6">Projects</a>
-            <a href="#footer" class="w-full text-center p-6">Contact</a>
-          </div>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero section -->
-  <section id="hero">
-    <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
-      <!-- Content container-->
-      <div class="flex flex-col items-center space-y-10 mb-44 lg:mt-16 lg:mb-52 lg:w-1/2 xl:mb-52">
-        <h1 class="text-5xl font-bold text-center lg:text-6xl">
-          Μια ομάδα που ξεπερνά τα όρια του σχεδιασμού
-        </h1>
-
-        <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-center">
-          Η ομάδα μας ξεπερνά το σχεδιασμό, δημιουργώντας ολοκληρωμένες λύσεις και αποτελέσματα.
-        </p>
-      </div>
-      <!-- Image -->
-      <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-        <img src="images/3d-floor.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats section -->
-  <section id="stats" class="py-24 bg-gray-100">
-    <div class="container mx-auto px-3">
-      <h2 class="text-4xl mb-6 font-bold text-center">
-        Υπηρεσίες 
-      </h2>
-      <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
-        Ανακάλυψε πώς μπορούμε να πραγματοποιήσουμε την ανάγκη σου.
-      </p>
-    </div>
-  </section>
-
-  <!-- Services Box section -->
-  <section id="services" class="pb-32 bg-gray-100">
-    <div
-      class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 md:flex-wrap md:items-stretch feature-container">
-      <!-- Horizontal line -->
-      <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
-
-      <!-- Vertical line -->
-      <div class="absolute w-2 left-1/2 -ml-1 bg-cyan md:hidden" style="top: 100px; height: 180%;"></div>
-
-      <!-- Feature Boxes -->
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Άδειες Δόμησης
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Έκδοση οικοδομικών αδειών με συμμόρφωση στις απαιτήσεις.
-          <br><br>
-          <b>Υπηρεσίες</b>: άδεια κατεδάφισης, ανέγερσης, προσθήκης, επισκευής και τροποποίησης όψεων.
-        </p>
-        <a href="services/service1.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Τακτοποιήσεις Αυθαιρέτων
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Ακριβή τοπογραφικά διαγράμματα με επαγγελματισμό, κάλυψη κάθε ανάγκης του έργου σας και αξιόπιστη υποστήριξη
-          σε όλα τα στάδια.
-        </p>
-        <a href="services/service5.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Τοπογραφικά Διαγράμματα
-        </h5>
-        <ul class="flex flex-col text-gray-400 md:text-left">
-          <li>Ακριβής εκπόνηση τοπογραφικών διαγραμμάτων με επαγγελματισμό.</li>
-          <br>
-          <li>Κάλυψη κάθε ανάγκης του έργου σας με συνέπεια.</li>
-          <br>
-          <li>Παροχή αξιόπιστης υποστήριξης σε όλα τα στάδια.</li>
-        </ul>
-        <a href="services/service3.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-    </div>
-
-    <div
-      class="relative container secondBox flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 md:flex-wrap md:items-stretch feature-container">
-
-      <!-- Horizontal line -->
-      <div class="hidden absolute top-24 left-16 w-10/12 h-3 bg-cyan md:block"></div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Ανακαινίσεις Διαμερισμάτων - Καταστημάτων
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Η ομάδα μας ειδικεύεται σε ανακαινίσεις και διακόσμηση, προσφέροντας λειτουργικές και αισθητικές λύσεις που
-          αναβαθμίζουν την αξία του ακινήτου, με χρήση σύγχρονης τεχνολογίας και 3D σχεδίων για απόλυτη διαφάνεια.
-        </p>
-        <a href="services/service4.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Άδειες Λειτουργίας Καταστημάτων
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Αναλαμβάνουμε την έκδοση αδειών λειτουργίας για κάθε επαγγελματικό χώρο, εξασφαλίζοντας τη συμμόρφωση με τη
-          νομοθεσία και την ασφαλή λειτουργία της επιχείρησής σας. Προσφέρουμε υποστήριξη από τη συγκέντρωση
-          δικαιολογητικών μέχρι την τελική έγκριση.
-        </p>
-        <a href="services/service5.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-
-      <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3 feature-box">
-        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-          <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-            <img src="images/icon-brand-recognition.svg" alt="">
-          </div>
-        </div>
-        <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-          Μελέτες
-        </h5>
-        <p class="text-center text-gray-400 md:text-left flex-grow">
-          Προσφέρουμε πλήρεις μελέτες για αρχιτεκτονικές, στατικές και μηχανολογικές ανάγκες, εξασφαλίζοντας ασφάλεια,
-          λειτουργικότητα και ποιότητα με τη χρήση σύγχρονης τεχνολογίας.
-        </p>
-        <a href="services/service6.html" class="px-4 py-2 text-center text-white bg-cyan rounded-lg hover:bg-cyanLight">
-          Μάθετε Περισσότερα...
-        </a>
-      </div>
-    </div>
-  </section>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Υπό Κατασκευή</title>
   <style>
-
-    .secondBox{
-      margin-top: 5%;
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #222;
+      --accent: #f9b233;
     }
 
-    @media (min-width: 768px) {
-      .secondBox{
-        margin-top: 1%;
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --accent: #f9b233;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .loading-dots::after {
+      content: ' .';
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+      0%, 20% { content: ' .'; }
+      40% { content: ' ..'; }
+      60% { content: ' ...'; }
+      100% { content: ' .'; }
+    }
+
+    .construction-image {
+      max-width: 300px;
+      margin: 30px 0;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 10px;
       }
 
-      .feature-container {
-        display: flex;
-        align-items: stretch;
+      .construction-image {
+        max-width: 200px;
       }
 
-      .feature-box {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-      }
-
-      .feature-box p {
-        flex-grow: 1;
+      .toggle-btn {
+        padding: 4px 10px;
       }
     }
   </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-  <!-- New Projects Section -->
-  <section id="projects" class="py-24 bg-gray-100">
-    <div class="container mx-auto px-6 mt--24">
-      <h2 class="text-4xl mb-6 font-bold text-center">Έργα</h2>
+  <div class="logo">PROSPECT</div>
+  <img src="./image.png" alt="Under Construction" class="construction-image" />
+  <div class="loading-dots">Η σελίδα είναι υπό κατασκευή</div>
+  <div>Σύντομα κοντά σας.</div>
 
-      <div class="flex flex-col md:flex-row justify-between gap-8">
-
-<!-- Project Card 1 -->
-<a href="./projects/project1.html" class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
-  <img src="images/Living-room-6-1.jpg" alt="Project 1" class="w-48 object-cover rounded-lg">
-  <h3 class="text-2xl text-center font-bold">Ανακατασκευή τριώροφης οικοδομής</h3>
-  <p class="text-gray-400 text-center">Κηφισιά, Αττικής</p>
-  <div class="flex-grow"></div>
-  <div class="text-center text-cyan">
-    <i class="fas fa-arrow-right fa-2x"></i>
-  </div>
-</a>
-
-<!-- Project Card 2 -->
-<a href="./projects/project2.html" class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
-  <img src="images/Living-room-6-1.jpg" alt="Project 2" class="w-48 object-cover rounded-lg">
-  <h3 class="text-2xl text-center font-bold">Ανακαίνιση διαμερίσματος</h3>
-  <p class="text-gray-400 text-center">Αγ. Δημήτριος, Αττικής</p>
-  <div class="flex-grow"></div>
-  <div class="text-center text-cyan">
-    <i class="fas fa-arrow-right fa-2x"></i>
-  </div>
-</a>
-
-<!-- Project Card 3 -->
-<a href="./projects/project3.html" class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
-  <img src="images/Living-room-6-1.jpg" alt="Project 3" class="w-48 object-cover rounded-lg">
-  <h3 class="text-2xl text-center font-bold">Ανακαίνιση διαμερίσματος</h3>
-  <p class="text-gray-400 text-center">Καλλιθέα, Αττικής</p>
-  <div class="flex-grow"></div>
-  <div class="text-center text-cyan">
-    <i class="fas fa-arrow-right fa-2x"></i>
-  </div>
-</a>
-
-<!-- Project Card 4 -->
-<a href="./projects/project4.html" class="w-full md:w-[48%] flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md custom-margin">
-  <img src="images/Living-room-6-1.jpg" alt="Project 4" class="w-48 object-cover rounded-lg">
-  <h3 class="text-2xl text-center font-bold">Αναδιαμόρφωση όψεων ισόγειας κατοικίας</h3>
-  <p class="text-gray-400 text-center">Αθήνα, Αττικής</p>
-  <div class="flex-grow"></div>
-  <div class="text-center text-cyan">
-    <i class="fas fa-arrow-right fa-2x"></i>
-  </div>
-</a>
-        
-      </div>
-    </div>
-
-    <style>
-      .custom-margin {
-        margin: 16px;
-      }
-    
-      @media (max-width: 768px) {
-        .custom-margin {
-          margin: 0px;
-          margin-bottom: 20px;
-        }
-      }
-    
-      .flex-grow {
-        flex-grow: 1;
-      }
-    
-      .text-center {
-        text-align: center;
-      }
-    
-      .text-cyan {
-        color: #00bcd4;
-      }
-    
-      .hover\:bg-cyanLight:hover {
-        background-color: #b2ebf2;
-      }
-    </style>
-  </section>
-
-  <footer id="footer" class="py-16 bg-veryDarkViolet">
-    <div
-      class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items:start">
-      <img src="images/logo.svg" alt="">
-
-      <!-- Menus container -->
-      <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
-        <div class="flex flex-col items-center w-full md:items-start">
-          <h5 class="text-white text-2xl mb-5 font-bold capitalize">Επικοινωνία</h5>
-          <div class="flex flex-col items-center space-y-3 md:items-start">
-            <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Περιοχή</b>: Αττική</a>
-            <a class="capitalize text-lg text-gray-400 hover:text-cyan"><b>Τηλ</b>: 697 000 0090</a>
-            <a class="text-lg  text-gray-400 hover:text-cyan"><b>Email</b>: prospect@info.com</a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Social container -->
-      <div class="flex space-x-8">
-        <a href="">
-          <img src="images/icon-facebook.svg" alt="" d class="ficon">
-        </a>
-        <a href="">
-          <img src="images/icon-instagram.svg" alt="" class="ficon">
-        </a>
-        <a href="">
-          <img src="images/icon-twitter.svg" alt="" class="ficon">
-        </a>
-      </div>
-    </div>
-
-    <div class="flex flex-col items-center justify-center mt-2 custom-mobile">
-      <p>Developed by <strong><a href="https://panagiotiszois.github.io/PanagiotisZois/" target="_blank"
-            class=" hover:text-cyan md:text-cyan">Panagiotis Zois</a></strong> | &copy; 2025 All rights reserved</p>
-    </div>
-
-    <style>
-      @media (max-width: 768px) {
-        .custom-mobile {
-          margin: 40px;
-          text-align: center;
-          margin-bottom: -20px;
-        }
-      }
-    </style>
-
-    </div>
-  </footer>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
-
 </html>
