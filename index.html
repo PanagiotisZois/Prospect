@@ -36,27 +36,14 @@
       margin-bottom: 20px;
     }
 
-    .loading-dots::after {
-      content: ' .';
-      animation: dots 1.5s steps(3, end) infinite;
-    }
-
-    @keyframes dots {
-      0%, 20% { content: ' .'; }
-      40% { content: ' ..'; }
-      60% { content: ' ...'; }
-      100% { content: ' .'; }
-    }
-
     .construction-image {
       max-width: 300px;
       margin: 30px 0;
     }
 
-    .toggle-btn {
+    .toggle-btn, .lang-btn {
       position: absolute;
       top: 20px;
-      right: 20px;
       background: none;
       border: 2px solid var(--accent);
       color: var(--accent);
@@ -65,25 +52,18 @@
       cursor: pointer;
     }
 
-    @media (max-width: 600px) {
-      .logo {
-        font-size: 2rem;
-        text-align: center;
-        padding: 0 10px;
-      }
+    .toggle-btn {
+      right: 20px;
+    }
 
-      .construction-image {
-        max-width: 200px;
-      }
-
-      .toggle-btn {
-        padding: 4px 10px;
-      }
+    .lang-btn {
+      left: 20px;
     }
   </style>
 </head>
 <body>
   <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  <button class="lang-btn" onclick="toggleLanguage()">🌐 EN/GR</button>
 
   <div class="logo">PROSPECT</div>
   <img src="./image.png" alt="Under Construction" class="construction-image" />
@@ -97,6 +77,24 @@
 
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
+    }
+
+    function toggleLanguage() {
+      const logo = document.getElementById("logo");
+      const message = document.getElementById("message");
+      const soon = document.getElementById("soon");
+
+      if (document.documentElement.lang === "el") {
+        document.documentElement.lang = "en";
+        logo.textContent = "PROSPECT";
+        message.textContent = "The page is under construction";
+        soon.textContent = "Coming soon.";
+      } else {
+        document.documentElement.lang = "el";
+        logo.textContent = "PROSPECT";
+        message.textContent = "Η σελίδα είναι υπό κατασκευή";
+        soon.textContent = "Σύντομα κοντά σας.";
+      }
     }
   </script>
 </body>
